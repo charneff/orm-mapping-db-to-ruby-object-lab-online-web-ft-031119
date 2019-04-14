@@ -91,4 +91,8 @@ class Student
     sql = "DROP TABLE IF EXISTS students"
     DB[:conn].execute(sql)
   end
+  
+  def save
+    sql = <<-SQL	    sql = <<-SQL
+      INSERT INTO students (name, grade) 	      INSERT INTO students (name, grade) 
 end
